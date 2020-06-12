@@ -55,6 +55,6 @@ The code for the Capsule Network implementation is adapted from here. Codes to p
     filterOutMissingFiles.py : aligns lists of images with the actual images that exist in the folder
     xray14_preprocess.py : Extracting and rescaling the Chest XRay14 dataset
     xray14_selectionMT.py : Converting downscaled Xray14 images into numpy arrays and saving them
-    stackNPYFiles.py : creating the final 13 giga data file with corresponding labesl from the output of xray14_selectionMT
+    stackNPYFiles.py : creating the final 13 giga data file with corresponding labesl from the output of xray14_selectionMT.py
     
 
