@@ -12,7 +12,7 @@ from itertools import chain
 from numpy import save
 #%% Data Selection
 
-all_xray_df = pd.read_csv('Data_Entry_2017_Updated.csv') #loading the csv file
+all_xray_df = pd.read_csv('Data_Entry_2017_Updated.csv') # loading the updated csv file
 all_image_paths = {os.path.basename(x): x for x in 
                    glob(os.path.join('.', 'data', 'images*', '*.png'))}
 
