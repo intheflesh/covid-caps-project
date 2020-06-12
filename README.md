@@ -25,5 +25,4 @@ Steps to prepare the pre-training dataset
 6)  run pre-train.py 
     (we set batch size to be 70 - this is the max for our GPU - GForce DTX 1080TI with 11 giga RAM) 
     training time for 100 epochs is about 20 hours.
-
-
+______________
