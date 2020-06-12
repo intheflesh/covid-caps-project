@@ -11,6 +11,7 @@ We did several changes to it:
 * changed the exporting of images to numpy arrays to be in batches, 
 so the memory does not overflow and the runtime is reduced.
 
+___
 Steps to prepare the pre-training dataset
 1)  Follow the guideline in the database folder to download and unpack the original dataset.
 2)  Run xray14_preprocess.py
@@ -24,6 +25,5 @@ Steps to prepare the pre-training dataset
 5)  run stackNPYFiles.py so we can create 2 final data and label files (the original way to do it was too long).
 6)  run pre-train.py 
     (we set batch size to be 70 - this is the max for our GPU - GForce DTX 1080TI with 11 giga RAM) 
-    training time for 100 epochs is about 20 hours.
-    
+    training time for 100 epochs is about 20 hours. 
 ___
