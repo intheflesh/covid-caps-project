@@ -4,14 +4,14 @@ This project belongs to Noga Mudrik and Roman Frenkel.
 
 This project is based on the covid-caps project:
 https://github.com/ShahinSHH/COVID-CAPS
-___
+__
 ## update board
 We did several changes to it:
 * pre-processed the input images to remove noises such as letters, markings, numbers, etc.
 * added code to handle missing files we found in the pre-training dataset.
 * changed the exporting of images to numpy arrays to be in batches, 
 so the memory does not overflow and the runtime is reduced.
-___
+__
 ## Steps to prepare the pre-training dataset
 1)  Follow the guideline in the database folder to download and unpack the original dataset.
 2)  Run xray14_preprocess.py
@@ -26,7 +26,7 @@ ___
 6)  run pre-train.py 
     (we set batch size to be 70 - this is the max for our GPU - GForce DTX 1080TI with 11 giga RAM) 
     training time for 100 epochs is about 20 hours. 
-___
+__
 ## Requirements
 
     Tested with tensorflow-gpu 2 and keras-gpu 2.2.4
@@ -39,7 +39,7 @@ ___
     Scikit-image
     Scikit-learn
     Matplotlib
-___
+__
 ## Code
 
 The code for the Capsule Network implementation is adapted from here. Codes to prepare the X-ray14 dataset are adopted from here. Codes are available as the following list:
@@ -53,4 +53,4 @@ The code for the Capsule Network implementation is adapted from here. Codes to p
     weights-improvement-binary-86.h5 : Best model's weights without pre-training
     xray14_preprocess.py : Extracting and rescaling the Chest XRay14 dataset
     xray14_selection.py : Converting downscaled Xray14 images into numpy arrays and saving them
-___
+__
