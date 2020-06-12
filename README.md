@@ -1,4 +1,4 @@
-### covid-caps-project
+# covid-caps-project
 a capsule network based project to detect COVID19 in lung X-Rays
 This project belongs to Noga Mudrik and Roman Frenkel.
 
