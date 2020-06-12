@@ -27,7 +27,6 @@ Steps to prepare the pre-training dataset
     (we set batch size to be 70 - this is the max for our GPU - GForce DTX 1080TI with 11 giga RAM) 
     training time for 100 epochs is about 20 hours. 
 ___
-
 Requirements
 
     Tested with tensorflow-gpu 2 and keras-gpu 2.2.4
@@ -40,7 +39,7 @@ Requirements
     Scikit-image
     Scikit-learn
     Matplotlib
-
+___
 Code
 
 The code for the Capsule Network implementation is adapted from here. Codes to prepare the X-ray14 dataset are adopted from here. Codes are available as the following list:
@@ -54,4 +53,4 @@ The code for the Capsule Network implementation is adapted from here. Codes to p
     weights-improvement-binary-86.h5 : Best model's weights without pre-training
     xray14_preprocess.py : Extracting and rescaling the Chest XRay14 dataset
     xray14_selection.py : Converting downscaled Xray14 images into numpy arrays and saving them
-
+___
