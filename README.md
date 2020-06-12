@@ -48,9 +48,13 @@ The code for the Capsule Network implementation is adapted from here. Codes to p
     binary-after.py : Codes for fine-tuning
     test_binary.py : Test and Evaluation
     weight-improvement-binary-after-44.h5 : COVID-CAPS weights after fine-tuning
-    pre-train.h5 : Weights for the pre-trained model
+    pre-train.h5 : Weights for the pre-trained model (taken from the original paper)
+    pre-train_ourTrainBaseline.h5 : Weights for the pre-trained model (re-created by us - baseline)
     binary.py : Main code without pre-training
     weights-improvement-binary-86.h5 : Best model's weights without pre-training
+    filterOutMissingFiles.py : aligns lists of images with the actual images that exist in the folder
     xray14_preprocess.py : Extracting and rescaling the Chest XRay14 dataset
-    xray14_selection.py : Converting downscaled Xray14 images into numpy arrays and saving them
+    xray14_selectionMT.py : Converting downscaled Xray14 images into numpy arrays and saving them
+    stackNPYFiles.py : creating the final 13 giga data file with corresponding labesl from the output of xray14_selectionMT
+    
 
