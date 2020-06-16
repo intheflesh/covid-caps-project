@@ -7,9 +7,9 @@ https://github.com/ShahinSHH/COVID-CAPS
 
 ## update board
 We did several changes to it:
-* pre-processed the input images to remove noises such as letters, markings, numbers, etc.
-* added code to handle missing files we found in the pre-training dataset.
-* changed the exporting of images to numpy arrays to be in batches, 
+* Pre-processed the input images to remove noises such as letters, markings, numbers, etc.
+* Added code to handle missing files we found in the pre-training dataset.
+* Changed the exporting of images to numpy arrays to be in batches, 
 so the memory does not overflow and the runtime is reduced.
 
 ## Steps to prepare the pre-training dataset
