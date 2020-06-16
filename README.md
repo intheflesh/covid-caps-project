@@ -39,6 +39,7 @@ so the memory does not overflow and the runtime is reduced.
     Scikit-image
     Scikit-learn
     Matplotlib
+    Numpy
 
 ## Code
 
