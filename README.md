@@ -8,6 +8,7 @@ https://github.com/ShahinSHH/COVID-CAPS
 ## update board
 We did several changes to it:
 * Pre-processed the input images to remove noises such as letters, markings, numbers, etc.
+This was removed from the development plan since we chose alternative research directions.
 * Added code to handle missing files we found in the pre-training dataset.
 * Changed the exporting of images to numpy arrays to be in batches, 
 so the memory does not overflow and the runtime is reduced.
@@ -46,7 +47,8 @@ so the memory does not overflow and the runtime is reduced.
 The code for the Capsule Network implementation is adapted from here. Codes to prepare the X-ray14 dataset are adopted from here. Codes are available as the following list:
 
     pre-train.py : Codes for pre-training
-    binary-after.py : Codes for fine-tuning
+    binary-after.py : Codes for fine-tuning - baseline
+    binary-after-updated.py : Codes for fine-tuning - updated loss and topology
     test_binary.py : Test and Evaluation
     weight-improvement-binary-after-44.h5 : COVID-CAPS weights after fine-tuning
     pre-train.h5 : Weights for the pre-trained model (taken from the original paper)
