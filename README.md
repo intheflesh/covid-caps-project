@@ -30,17 +30,17 @@ so the memory does not overflow and the runtime is reduced.
 
 ## Requirements
 
-    Tested with tensorflow-gpu 2 and keras-gpu 2.2.4
-    Python 3.6
-    OpenCV
-    Pandas
-    Itertools
-    Glob
-    OS
-    Scikit-image
-    Scikit-learn
-    Matplotlib
-    Numpy
+* Tested with tensorflow-gpu 2 and keras-gpu 2.2.4
+* Python 3.6
+* OpenCV
+* Pandas
+* Itertools
+* Glob
+* OS
+* Scikit-image
+* Scikit-learn
+* Matplotlib
+* Numpy
 
 ## Code
 
