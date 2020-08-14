@@ -60,4 +60,26 @@ The code for the Capsule Network implementation is adapted from here. Codes to p
     xray14_selectionMT.py : Converting downscaled Xray14 images into numpy arrays and saving them
     stackNPYFiles.py : creating the final 13 giga data file with corresponding labesl from the output of xray14_selectionMT.py
     
+## Models
 
+    In this project, since the capsule network creates relatively compact models (1-2 mega).
+    We commited them to this repo.
+    We divide them into 2 groups:
+    * Pre Trained - models that were traind with the pre-train dataset (non-covid) as preperation to the covid fine-tune.
+    * Trained - pre-trained models that were fine-tuned on the covid dataset.
+    We keep a naming convention as follows: x_y.h5 means that we took pre-trained model x and performed fine tuning in a certain way, and called this way y.
+    
+    _Model board
+    * Pre Trained
+        0.h5 - this is the original pre-trained model taken from the repo of the original article:
+        https://github.com/ShahinSHH/COVID-CAPS
+        1.h5 - we re-created this model by running the pre-training on the train set of the non-covid dataset.
+        2.h4 - we tool all the samples in the non-covid dataset and ran training on it (not only the train set - all of it)
+    * Trained
+        0_0.h5, 1_0.h5, 2_0.h5 - we did fine-tuning on the covid dataset with the pre-trained models without any changes to the fine tuning code.
+        2_1.h5 - we changed the loss to penalize the covid mis-classifications more severely.
+        2_2.h5 - we added the same penalty as in the previous part and changed the network topology (added a large capsule layer)
+        
+    
+    
+    
