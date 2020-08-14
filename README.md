@@ -69,7 +69,7 @@ The code for the Capsule Network implementation is adapted from here. Codes to p
     * Trained - pre-trained models that were fine-tuned on the covid dataset.
     We keep a naming convention as follows: x_y.h5 means that we took pre-trained model x and performed fine tuning in a certain way, and called this way y.
     
-    _Model board
+    __Model board
     * Pre Trained
         0.h5 - this is the original pre-trained model taken from the repo of the original article:
         https://github.com/ShahinSHH/COVID-CAPS
